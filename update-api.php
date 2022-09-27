@@ -36,7 +36,7 @@ class update{
     $message=$GLOBALS ['message'];
     $flag=$GLOBALS ['flag '] ;
 
-    $sql_update = "UPDATE `unsubscriber` SET receiver='$receiver', sender= '$sender',   `message`= '$message', flag= '$flag' WHERE id=$id";
+    $sql_update = "UPDATE `unsubscriber` SET receiver='$receiver', sender= '$sender',   `message`= '$message', flag= '$flag' WHERE id='$id'";
     $sql_update_connection = $this->con->query($sql_update);
     if($sql_update_connection){
         echo json_encode(array('message'=>'updated successefully' , 'status'=>'true'));

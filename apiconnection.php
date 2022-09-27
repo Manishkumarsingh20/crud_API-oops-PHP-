@@ -10,7 +10,7 @@ class databaseconnection{
 
         $con = mysqli_connect($this->db_host, $this->db_user, $this->db_pass, $this->db_name);
         if($con){
-            echo "connected";
+            // echo "connected";
             return $this->con = $con;
 
         }else{

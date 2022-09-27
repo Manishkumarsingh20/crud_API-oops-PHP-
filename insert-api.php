@@ -39,7 +39,7 @@ Class insert_data{
         if($sql_connection){
             echo json_encode(array('message'=>'Inserted Successfully', 'status'=>'200'));
         }else{
-        echo json_encode(array('message'=>'Not Inserted Successfully', 'status'=>'False'));
+        echo json_encode(array('message'=>'Not Inserted Successfully', 'status'=>'false'));
         }
     }
 

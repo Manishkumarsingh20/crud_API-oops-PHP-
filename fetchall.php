@@ -28,7 +28,7 @@ class fetchallApi
             $data = $sql_conn->fetch_all(MYSQLI_ASSOC);
             echo json_encode($data);
         } else {
-            echo json_encode(array('message' => 'no record found', 'status' => 'Failed'));
+            echo json_encode(array('message' => 'no record found', 'status' => 'false'));
         }
     }
 }
